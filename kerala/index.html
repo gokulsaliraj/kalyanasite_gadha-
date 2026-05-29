@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>keralatrend.com — Premium Domain For Sale</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #00FFB2;
+    --accent2: #FF4D6D;
+    --accent3: #7B61FF;
+    --bg: #040810;
+    --bg2: #080F1E;
+    --bg3: #0D1830;
+    --text: #E8F4FF;
+    --muted: #6B82A8;
+    --border: rgba(0,255,178,0.15);
+    --glow: 0 0 40px rgba(0,255,178,0.15);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  /* Grid background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,255,178,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,255,178,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Noise overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.4;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 3rem;
+    background: rgba(4,8,16,0.8);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-logo {
+    font-family: 'Orbitron', monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .nav-badge {
+    background: rgba(0,255,178,0.1);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 6px 18px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: pulse-border 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-border {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(0,255,178,0.3); }
+    50% { box-shadow: 0 0 0 8px rgba(0,255,178,0); }
+  }
+
+  /* HERO */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 2rem 4rem;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .hero-orb {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,255,178,0.06) 0%, rgba(123,97,255,0.04) 40%, transparent 70%);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -55%);
+    pointer-events: none;
+    animation: orb-pulse 6s ease-in-out infinite;
+  }
+
+  @keyframes orb-pulse {
+    0%, 100% { opacity: 0.6; transform: translate(-50%, -55%) scale(1); }
+    50% { opacity: 1; transform: translate(-50%, -55%) scale(1.08); }
+  }
+
+  .hero-tag {
+    font-family: 'Orbitron', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+
+  .domain-name {
+    font-family: 'Orbitron', monospace;
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #FFFFFF 0%, #00FFB2 50%, #7B61FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 40px rgba(0,255,178,0.3));
+    letter-spacing: -2px;
+    animation: shimmer 4s linear infinite;
+    background-size: 200% 200%;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .hero-sub {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    font-weight: 400;
+    color: var(--muted);
+    max-width: 600px;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+  }
+
+  .hero-sub span {
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  /* STATS ROW */
+  .stats-row {
+    display: flex;
+    gap: 1px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    background: var(--border);
+    backdrop-filter: blur(10px);
+  }
+
+  .stat {
+    background: rgba(8,15,30,0.9);
+    padding: 1.5rem 2.5rem;
+    text-align: center;
+    flex: 1;
+  }
+
+  .stat-val {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent);
+    display: block;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: #040810;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    box-shadow: 0 0 30px rgba(0,255,178,0.3);
+  }
+
+  .btn-primary:hover {
+    background: #fff;
+    box-shadow: 0 0 50px rgba(0,255,178,0.5);
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  /* FEATURES */
+  .features {
+    position: relative;
+    z-index: 1;
+    padding: 6rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .section-tag {
+    font-family: 'Orbitron', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.15;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .feature-card {
+    background: var(--bg2);
+    padding: 2.5rem;
+    transition: background 0.3s;
+  }
+
+  .feature-card:hover {
+    background: var(--bg3);
+  }
+
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(0,255,178,0.08);
+    border: 1px solid rgba(0,255,178,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .feature-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+  }
+
+  .feature-desc {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  /* WHY KERALA TREND */
+  .why-section {
+    position: relative;
+    z-index: 1;
+    padding: 6rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .why-visual {
+    position: relative;
+  }
+
+  .kerala-map-box {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .kerala-map-box::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(0,255,178,0.04) 0%, transparent 70%);
+  }
+
+  .map-number {
+    font-family: 'Orbitron', monospace;
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--accent);
+    opacity: 0.15;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .kerala-stat-item {
+    position: relative;
+    z-index: 1;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .kerala-stat-item .ks-bar-wrap {
+    flex: 1;
+    height: 4px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .ks-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent3));
+    border-radius: 4px;
+    animation: bar-grow 2s ease forwards;
+  }
+
+  @keyframes bar-grow {
+    from { width: 0; }
+  }
+
+  .ks-label {
+    font-size: 0.8rem;
+    color: var(--muted);
+    min-width: 120px;
+  }
+
+  .ks-val {
+    font-family: 'Orbitron', monospace;
+    font-size: 0.75rem;
+    color: var(--accent);
+    min-width: 50px;
+    text-align: right;
+  }
+
+  .why-content h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+
+  .why-content h2 span {
+    color: var(--accent);
+  }
+
+  .why-content p {
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+
+  .use-case-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .use-case-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--text);
+  }
+
+  .use-case-list li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+    box-shadow: 0 0 8px var(--accent);
+  }
+
+  /* CONTACT FORM */
+  .contact-section {
+    position: relative;
+    z-index: 1;
+    padding: 6rem 2rem 8rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .contact-box {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 3.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact-box::before {
+    content: '';
+    position: absolute;
+    top: -1px; left: 50%; transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .form-group.full {
+    grid-column: 1 / -1;
+  }
+
+  label {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  input, select, textarea {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(0,255,178,0.12);
+    border-radius: 10px;
+    padding: 0.9rem 1.25rem;
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+    outline: none;
+    width: 100%;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    border-color: var(--accent);
+    background: rgba(0,255,178,0.04);
+    box-shadow: 0 0 0 3px rgba(0,255,178,0.08);
+  }
+
+  select option {
+    background: var(--bg2);
+    color: var(--text);
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .form-submit {
+    width: 100%;
+    background: var(--accent);
+    color: #040810;
+    border: none;
+    padding: 1.1rem;
+    border-radius: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 0.5rem;
+    box-shadow: 0 0 30px rgba(0,255,178,0.25);
+  }
+
+  .form-submit:hover {
+    background: #fff;
+    box-shadow: 0 0 50px rgba(0,255,178,0.4);
+    transform: translateY(-2px);
+  }
+
+  .form-note {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 1.25rem;
+  }
+
+  /* Success */
+  .success-msg {
+    display: none;
+    text-align: center;
+    padding: 3rem;
+    animation: fadeIn 0.5s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .success-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .success-msg h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+
+  /* FOOTER */
+  footer {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid var(--border);
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  footer .foot-logo {
+    font-family: 'Orbitron', monospace;
+    font-size: 0.9rem;
+    color: var(--accent);
+    letter-spacing: 2px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  /* SCROLL LINE */
+  .scroll-line {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    opacity: 0.5;
+  }
+
+  .scroll-line span {
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .scroll-line-bar {
+    width: 1px;
+    height: 50px;
+    background: linear-gradient(var(--accent), transparent);
+    animation: scroll-down 2s ease-in-out infinite;
+  }
+
+  @keyframes scroll-down {
+    0% { opacity: 0; transform: scaleY(0) translateY(-20px); transform-origin: top; }
+    50% { opacity: 1; }
+    100% { opacity: 0; transform: scaleY(1) translateY(0); transform-origin: top; }
+  }
+
+  /* Corner decorations */
+  .corner-deco {
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    pointer-events: none;
+    z-index: 50;
+    opacity: 0.3;
+  }
+
+  .corner-deco.tl { top: 80px; left: 0; border-top: 1px solid var(--accent); border-left: 1px solid var(--accent); }
+  .corner-deco.tr { top: 80px; right: 0; border-top: 1px solid var(--accent); border-right: 1px solid var(--accent); }
+
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .why-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .stats-row { flex-direction: column; gap: 0; }
+    .contact-box { padding: 2rem 1.5rem; }
+    footer { flex-direction: column; text-align: center; }
+    .corner-deco { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="corner-deco tl"></div>
+<div class="corner-deco tr"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">KT/Domain</div>
+  <div class="nav-badge">⚡ For Sale</div>
+  <a href="#contact" class="btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.85rem;">Make Offer</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-orb"></div>
+
+  <p class="hero-tag">// Premium Digital Real Estate</p>
+
+  <h1 class="domain-name">keralatrend.com</h1>
+
+  <p class="hero-sub">
+    Own the most powerful <span>trending authority</span> for Kerala's digital universe.
+    A name that captures culture, commerce, and connection — all in one unforgettable address.
+  </p>
+
+  <div class="stats-row">
+    <div class="stat">
+      <span class="stat-val">38M+</span>
+      <span class="stat-label">Kerala Internet Users</span>
+    </div>
+    <div class="stat">
+      <span class="stat-val">.com</span>
+      <span class="stat-label">Premium Extension</span>
+    </div>
+    <div class="stat">
+      <span class="stat-val">1 of 1</span>
+      <span class="stat-label">Exact Match Domain</span>
+    </div>
+    <div class="stat">
+      <span class="stat-val">High</span>
+      <span class="stat-label">SEO Authority</span>
+    </div>
+  </div>
+
+  <div class="hero-cta">
+    <a href="#contact" class="btn-primary">Acquire This Domain</a>
+    <a href="#why" class="btn-secondary">Why This Domain?</a>
+  </div>
+
+  <div class="scroll-line">
+    <span>Scroll</span>
+    <div class="scroll-line-bar"></div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="section-header">
+    <p class="section-tag">// Domain Value</p>
+    <h2 class="section-title">Built for digital dominance</h2>
+  </div>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">🌴</div>
+      <h3 class="feature-title">Geo + Niche Authority</h3>
+      <p class="feature-desc">Combines Kerala's identity with "trend" — instantly establishing authority in news, lifestyle, entertainment, or e-commerce targeting one of India's most connected states.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔍</div>
+      <h3 class="feature-title">SEO-Ready From Day One</h3>
+      <p class="feature-desc">Exact-match keywords in the domain name deliver a powerful head start in search rankings for queries around Kerala trends, news, and local content.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📱</div>
+      <h3 class="feature-title">Social Media Perfect</h3>
+      <p class="feature-desc">Short, punchy, and instantly memorable. @keralatrend is the kind of handle that builds identity across Instagram, YouTube, and beyond.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💼</div>
+      <h3 class="feature-title">Multi-Vertical Potential</h3>
+      <p class="feature-desc">News portal, travel guide, food blog, fashion platform, or local classifieds — this domain works across every vertical targeting Kerala's digital market.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📈</div>
+      <h3 class="feature-title">Investment Grade Asset</h3>
+      <p class="feature-desc">Premium .com domains with geo + keyword combinations are finite assets. Kerala's digital economy is accelerating — this name only appreciates.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">⚡</div>
+      <h3 class="feature-title">Instant Transfer</h3>
+      <p class="feature-desc">Fast, secure domain transfer via any major registrar. Full ownership, clean history, and zero encumbrances included. Deal closes same day.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY SECTION -->
+<section class="why-section" id="why">
+  <div class="why-grid">
+    <div class="why-visual">
+      <div class="kerala-map-box">
+        <div class="map-number">KL</div>
+
+        <div class="kerala-stat-item">
+          <span class="ks-label">Internet Penetration</span>
+          <div class="ks-bar-wrap"><div class="ks-bar" style="width: 82%"></div></div>
+          <span class="ks-val">82%</span>
+        </div>
+        <div class="kerala-stat-item">
+          <span class="ks-label">Mobile Users</span>
+          <div class="ks-bar-wrap"><div class="ks-bar" style="width: 93%"></div></div>
+          <span class="ks-val">93%</span>
+        </div>
+        <div class="kerala-stat-item">
+          <span class="ks-label">Digital Commerce</span>
+          <div class="ks-bar-wrap"><div class="ks-bar" style="width: 67%"></div></div>
+          <span class="ks-val">↑67%</span>
+        </div>
+        <div class="kerala-stat-item">
+          <span class="ks-label">Social Media Active</span>
+          <div class="ks-bar-wrap"><div class="ks-bar" style="width: 78%"></div></div>
+          <span class="ks-val">78%</span>
+        </div>
+        <div class="kerala-stat-item">
+          <span class="ks-label">Content Creators</span>
+          <div class="ks-bar-wrap"><div class="ks-bar" style="width: 45%"></div></div>
+          <span class="ks-val">45K+</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="why-content">
+      <p class="section-tag">// Why This Name Wins</p>
+      <h2>Kerala is <span>trending</span>. Own the domain that says it all.</h2>
+      <p>Kerala leads India in literacy, internet adoption, and digital content consumption. The state's cultural richness — from backwaters to business — fuels a massive, engaged online audience hungry for relevant local content.</p>
+      <p>keralatrend.com is the definitive domain for capturing this momentum. It's not just a name — it's a brand statement.</p>
+
+      <ul class="use-case-list">
+        <li>Kerala News & Current Affairs Portal</li>
+        <li>Viral Entertainment & Reels Platform</li>
+        <li>Local Fashion, Food & Lifestyle Media</li>
+        <li>Kerala Real Estate & Business Hub</li>
+        <li>Tourism & Travel Authority Site</li>
+        <li>Regional E-commerce Marketplace</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="contact-section" id="contact">
+  <div class="section-header">
+    <p class="section-tag">// Acquire This Domain</p>
+    <h2 class="section-title">Make your offer</h2>
+    <p style="color: var(--muted); margin-top: 0.75rem; font-size: 0.95rem;">Fill in the form and we'll get back to you within 24 hours.</p>
+  </div>
+
+  <div class="contact-box">
+    <div id="form-wrap">
+      <!-- Web3Forms Integration -->
+      <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+        <input type="hidden" name="access_key" value="bc394332-11c5-4fe4-8d80-5693a69f47cc">
+        <input type="hidden" name="subject" value="New Acquisition Offer: keralatrend.com">
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="usecase">Intended Use</label>
+            <select name="intended_use" id="usecase">
+              <option value="" disabled selected>How will you use this domain?</option>
+              <option value="News & Media Portal">News & Media Portal</option>
+              <option value="E-commerce / Marketplace">E-commerce / Marketplace</option>
+              <option value="Travel & Tourism">Travel & Tourism</option>
+              <option value="Entertainment & Content">Entertainment & Content</option>
+              <option value="Real Estate / Business Directory">Real Estate / Business Directory</option>
+              <option value="Investment / Resale">Investment / Resale</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message (Optional)</label>
+          <textarea name="message" id="message" placeholder="Tell us about your vision for this domain, timeline, or any specific requirements..." required></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">Send Acquisition Inquiry →</button>
+      </form>
+
+      <p class="form-note">🔒 Your information is kept completely confidential. No spam, ever.</p>
+    </div>
+
+    <div class="success-msg" id="success-msg">
+      <div class="success-icon">✅</div>
+      <h3>Inquiry Received!</h3>
+      <p style="color: var(--muted); line-height: 1.7;">Thank you for your interest in <strong style="color: var(--accent)">keralatrend.com</strong>. We'll review your offer and reach out within 24 hours to discuss next steps.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-logo">keralatrend.com</div>
+  <p>Premium domain available for acquisition · Serious inquiries only</p>
+  <p style="font-size: 0.75rem;">© 2026 · All rights reserved</p>
+</footer>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const formWrap = document.getElementById('form-wrap');
+  const successMsg = document.getElementById('success-msg');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const btn = form.querySelector('.form-submit');
+    const originalText = btn.innerHTML;
+    btn.innerHTML = "Sending...";
+    btn.style.opacity = "0.7";
+    btn.disabled = true;
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let jsonResponse = await response.json();
+            if (response.status == 200) {
+                formWrap.style.display = "none";
+                successMsg.style.display = "block";
+            } else {
+                alert(jsonResponse.message || "Something went wrong.");
+                btn.innerHTML = originalText;
+                btn.style.opacity = "1";
+                btn.disabled = false;
+            }
+        })
+        .catch(error => {
+            alert("Submission failed. Please check your connection.");
+            btn.innerHTML = originalText;
+            btn.style.opacity = "1";
+            btn.disabled = false;
+        });
+  });
+
+  // Animate elements on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.feature-card, .kerala-stat-item, .why-content').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
