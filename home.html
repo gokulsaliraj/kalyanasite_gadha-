@@ -17,6 +17,13 @@
     <script>
         tailwind.config = {
             theme: {
+                screens: {
+                    'xs': '375px',
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1280px',
+                },
                 extend: {
                     fontFamily: {
                         display: ['Cinzel', 'serif'],
@@ -70,20 +77,56 @@
         </button>
     </div>
 
-    <!-- SPLIT CARD INTRO OVERLAY -->
-    <div id="split-gate" onclick="openWeddingCard()" class="fixed inset-0 z-50 flex cursor-pointer select-none overflow-hidden">
-        <div id="left-door" class="w-1/2 h-full bg-keralaDark border-r border-gold/20 flex flex-col justify-center items-end pr-2 sm:pr-6 md:pr-12 relative overflow-hidden">
-            <div class="absolute inset-y-0 left-0 w-4 bg-gradient-to-r from-gold/10 to-transparent"></div>
-            <h1 class="font-display text-xl sm:text-3xl md:text-5xl lg:text-6xl text-gold tracking-wide text-right break-words max-w-full">Unnikrishnan</h1>
+    <!-- PREMIUM SPLIT CARD COVER OVERLAY -->
+    <div id="split-gate" onclick="openWeddingCard()" class="fixed inset-0 z-50 flex cursor-pointer select-none overflow-hidden bg-[#070b09]">
+        
+        <!-- Left Luxury Door -->
+        <div id="left-door" class="w-1/2 h-full border-r border-gold/30 flex flex-col justify-center items-end pr-5 sm:pr-12 md:pr-16 relative overflow-hidden bg-gradient-to-br from-[#111a16] via-[#0A0F0D] to-[#050807]">
+            <!-- Luxury Aura Glow Accent -->
+            <div class="absolute -left-1/4 top-1/4 w-96 h-96 rounded-full bg-gold/5 blur-[120px] pointer-events-none"></div>
+            <!-- Fine Traditional Pinstripe Border Frame -->
+            <div class="absolute inset-y-4 left-4 right-0 border-y border-l border-gold/10 pointer-events-none"></div>
+            
+            <div class="relative flex flex-col items-end space-y-1 sm:space-y-2 max-w-[85%] text-right">
+                <span class="font-sans text-[8px] xs:text-[10px] sm:text-[11px] uppercase tracking-[0.3em] sm:tracking-[0.4em] text-gold/50">The Groom</span>
+                <h1 class="font-display text-[15px] xs:text-xl sm:text-3xl md:text-5xl lg:text-6xl text-gold tracking-wide font-medium drop-shadow-md truncate max-w-full">
+                    Unnikrishnan
+                </h1>
+                <div class="w-10 sm:w-20 h-[1px] bg-gradient-to-l from-gold/40 to-transparent mt-1"></div>
+            </div>
         </div>
-        <div id="right-door" class="w-1/2 h-full bg-keralaDark border-l border-gold/20 flex flex-col justify-center items-start pl-2 sm:pl-6 md:pl-12 relative overflow-hidden">
-            <div class="absolute inset-y-0 right-0 w-4 bg-gradient-to-l from-gold/10 to-transparent"></div>
-            <h1 class="font-display text-xl sm:text-3xl md:text-5xl lg:text-6xl text-stone-100 tracking-wide text-left break-words max-w-full">Gaadha</h1>
+
+        <!-- Right Luxury Door -->
+        <div id="right-door" class="w-1/2 h-full border-l border-gold/30 flex flex-col justify-center items-start pl-5 sm:pl-12 md:pl-16 relative overflow-hidden bg-gradient-to-tl from-[#111a16] via-[#0A0F0D] to-[#050807]">
+            <!-- Luxury Aura Glow Accent -->
+            <div class="absolute -right-1/4 bottom-1/4 w-96 h-96 rounded-full bg-gold/5 blur-[120px] pointer-events-none"></div>
+            <!-- Fine Traditional Pinstripe Border Frame -->
+            <div class="absolute inset-y-4 right-4 left-0 border-y border-r border-gold/10 pointer-events-none"></div>
+            
+            <div class="relative flex flex-col items-start space-y-1 sm:space-y-2 max-w-[85%] text-left">
+                <span class="font-sans text-[8px] xs:text-[10px] sm:text-[11px] uppercase tracking-[0.3em] sm:tracking-[0.4em] text-stone-400/70">The Bride</span>
+                <h1 class="font-display text-[15px] xs:text-xl sm:text-3xl md:text-5xl lg:text-6xl text-stone-100 tracking-wide font-medium drop-shadow-md truncate max-w-full">
+                    Gaadha
+                </h1>
+                <div class="w-10 sm:w-20 h-[1px] bg-gradient-to-r from-gold/40 to-transparent mt-1"></div>
+            </div>
         </div>
-        <div id="center-emblem" class="absolute inset-0 flex items-center justify-center">
-            <div class="w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full bg-keralaDark border border-gold flex flex-col items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-105">
-                <span class="font-display text-gold text-[10px] sm:text-xs tracking-widest uppercase">Weds</span>
-                <span class="text-[7px] sm:text-[9px] font-sans text-stone-400 tracking-[0.2em] uppercase mt-0.5 sm:mt-1 animate-pulse">Touch</span>
+
+        <!-- Grand Multilayered Palace Crest -->
+        <div id="center-emblem" class="absolute inset-0 flex items-center justify-center z-10">
+            <div class="relative flex items-center justify-center group">
+                <!-- Outer Pulsing Glow Aura Ring -->
+                <div class="absolute inset-0 w-16 h-16 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full border border-gold/20 scale-125 xs:scale-135 sm:scale-125 animate-pulse bg-gold/[0.01] blur-xs"></div>
+                <!-- Diamond Outer Frame Rotating Ring Accent -->
+                <div class="absolute w-14 h-14 xs:w-18 xs:h-18 sm:w-26 sm:h-26 md:w-30 md:h-30 border border-gold/40 rotate-45 transition-transform duration-700 group-hover:rotate-90"></div>
+                
+                <!-- Main Center Medallion Card -->
+                <div class="w-12 h-12 xs:w-16 xs:h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full bg-[#0A0F0D] border-2 border-gold flex flex-col items-center justify-center shadow-[0_0_40px_rgba(197,168,107,0.2)] relative z-10">
+                    <div class="absolute inset-0.5 sm:inset-1 rounded-full border border-gold/20"></div>
+                    <span class="font-display text-gold text-[8px] xs:text-[10px] sm:text-xs tracking-[0.15em] sm:tracking-[0.2em] uppercase font-bold relative z-20">Weds</span>
+                    <div class="w-4 sm:w-6 h-[1px] bg-gold/30 my-0.5 sm:my-1"></div>
+                    <span class="text-[6px] xs:text-[8px] sm:text-[9px] font-sans text-stone-400 tracking-[0.2em] sm:tracking-[0.25em] uppercase animate-pulse">Open</span>
+                </div>
             </div>
         </div>
     </div>
@@ -135,7 +178,7 @@
                 </h1>
                 <div class="w-16 sm:w-20 h-[1px] kasavu-gradient opacity-0" id="hero-line"></div>
                 <p class="text-sm sm:text-base md:text-lg text-stone-300 font-normal max-w-xl leading-relaxed opacity-0 lang-transition font-malayalam" id="hero-description">
-                    "നീണ്ട നാളത്തെ കാത്തിരിപ്പുകൾക്കും പ്രണയത്തിനും ഒടുവിൽ, പരസ്പരം ഒന്നാകുവാൻ തീരുമാനിച്ച ഇരുവരുടെയും മംഗളകരമായ ദാമ്പത്യ ജീവിതത്തിന്റെ തുടക്കത്തിന് സാക്ഷ്യം വഹിക്കാൻ നിങ്ങളെ ഏوارهയും സ്നേഹപൂർവ്വം ക്ഷണിച്ചുകൊള്ളുന്നു."
+                    "നീണ്ട നാളത്തെ കാത്തിരിപ്പുകൾക്കും പ്രണയത്തിനും ഒടുവിൽ, പരസ്പരം ഒന്നാകുവാൻ തീരുമാനിച്ച ഇരുവരുടെയും മംഗളകരമായ ദാമ്പത്യ ജീവിതത്തിന്റെ തുടക്കത്തിന് സാക്ഷ്യം വഹിക്കാൻ നിങ്ങളെ ഏവരെയും സ്നേഹപൂർവ്വം ക്ഷണിച്ചുകൊള്ളുന്നു."
                 </p>
                 <div class="pt-2 sm:pt-4 opacity-0" id="hero-video-btn">
                     <button onclick="toggleVideo(true)" class="inline-flex items-center gap-3 sm:gap-4 group">
@@ -290,9 +333,9 @@
                 cLabel1: "Muhurtham",
                 cT1: "ശുഭമുഹൂർത്തം",
                 cP1_1: "രാവിലെ 10:30 നും 11:15 നും മധ്യേ",
-                cP1_2: "ദക്ഷായണി കൺവെൻഷൻ സെന്റർ, തിരുവല്ല",
+                cP1_2: "ദക്ഷായണി കൺവെንഷൻ സെന്റർ, തിരുവല്ല",
                 cLabel2: "Wedding Feast",
-                cT2: "സ്നേഹവിരുന്ന്",
+                cT2: "സ്നേഹവിруന്ന്",
                 cP2_1: "വിവാഹ ചടങ്ങുകൾക്ക് ശേഷം വേദിയിൽ വെച്ച് തന്നെ തുടർന്ന് നടത്തപ്പെടുന്നു.",
                 cLabel3: "Reception",
                 cT3: "പ്രത്യേക റിസപ്ഷൻ",
